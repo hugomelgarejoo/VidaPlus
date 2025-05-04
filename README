@@ -1,0 +1,69 @@
+SGHSS - Sistema de Gestão Hospitalar e de Serviços de Saúde (VidaPlus)
+HUGO ALBERTO MELGAREJO GALEANO
+RU: 4313926
+
+📋 Visão Geral
+O VidaPlus SGHSS é um sistema desenvolvido para gerenciar instituições de saúde como hospitais, clínicas, laboratórios e serviços de home care. O projeto visa centralizar informações de pacientes, agendamentos, prontuários, prescrições e atendimentos via telemedicina, além de garantir segurança e conformidade com a LGPD.
+
+🚀 Tecnologias Utilizadas
+Linguagem: Python 3.12
+
+Framework: FastAPI
+
+Banco de Dados: SQLite
+
+Testes de API: Postman
+
+Documentação de API: Swagger (gerado automaticamente pelo FastAPI)
+
+Segurança: Autenticação com JWT, criptografia de senhas AES-256
+
+🛠 Funcionalidades Implementadas
+Cadastro e gerenciamento de pacientes, médicos e consultas
+
+Prontuário eletrônico e prescrições digitais
+
+Agendamento de consultas presenciais e por telemedicina
+
+Geração automática de links para videochamada
+
+Controle de acesso por perfil (admin, médico, paciente)
+
+Conformidade com LGPD: logs e segurança dos dados
+
+
+▶️ Como Executar
+Clone o repositório:
+
+git clone https://github.com/usuario/vidaplus-sghss.git
+cd vidaplus-sghss
+
+Instale as dependências:
+
+
+pip install -r requirements.txt
+Rode o servidor:
+
+uvicorn main:app --reload
+
+
+📑 Requisitos
+✔️ Requisitos Funcionais
+Código	Descrição
+RF01	O sistema deve permitir o cadastro de pacientes, médicos, enfermeiros e administradores.
+RF02	O sistema deve permitir o login com autenticação e geração de token.
+RF03	O paciente deve conseguir agendar, visualizar e cancelar consultas.
+RF04	Os profissionais devem registrar prontuários e prescrições digitais.
+RF05	O sistema deve registrar atendimentos por telemedicina com geração de link de chamada.
+RF06	O administrador deve conseguir emitir relatórios e controlar cadastros.
+RF07	Deve ser possível visualizar o histórico clínico do paciente.
+
+❌ Requisitos Não Funcionais
+Código	Descrição
+RNF01	O sistema deve armazenar os dados em banco SQLite com persistência.
+RNF02	As senhas devem ser criptografadas usando AES-256.
+RNF03	O sistema deve registrar logs de acesso e ações críticas.
+RNF04	A API deve responder em até 2 segundos em consultas simples.
+RNF05	A disponibilidade do sistema deve ser de 99,5%.
+RNF06	A interface deve seguir padrões de acessibilidade (WCAG).
+RNF07	O sistema deve estar em conformidade com a LGPD.

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h2>Bem-vindo ao Dashboard!</h2>
+    <form action="/cadastro/medico" method="POST">
+        <h3>Cadastrar Médico</h3>
+        <label for="nome">Nome do Médico:</label>
+        <input type="text" name="nome" required>
+        <br>
+        <label for="crm">CRM:</label>
+        <input type="text" name="crm" required>
+        <br>
+        <label for="especialidade">Especialidade:</label>
+        <input type="text" name="especialidade" required>
+        <br>
+        <button type="submit">Cadastrar Médico</button>
+    </form>
+</body>
+</html>
